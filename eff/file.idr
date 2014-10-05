@@ -27,6 +27,6 @@ readJSON f = do
 
 main : IO ()
 main = do
-  Just (JsonObject j) <- run $ readJSON "test.txt"
+  Just (JsonObject j) <- run $ readJSON "test.json"
                                  | Nothing => putStrLn "No JSON parsed"
   print (lookup "foo" j)
