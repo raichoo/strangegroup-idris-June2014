@@ -1,5 +1,7 @@
 module Main
 
+import Data.Vect
+
 data Expr : Type where
   Val : Int -> Expr
   Add : Expr -> Expr -> Expr
