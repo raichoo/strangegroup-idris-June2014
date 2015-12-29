@@ -66,3 +66,19 @@ where expression : Expr
         putStrLn header
         putStrLn "---------------------------------"
         putStrLn $ body ++ "\n"
+
+{-
+
+Expression
+---------------------------------
+((1 + 2) + 3)
+
+Instructions
+---------------------------------
+PUSH 1; PUSH 2; ADD; PUSH 3; ADD
+
+Result
+---------------------------------
+[6]
+
+-}
